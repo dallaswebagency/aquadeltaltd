@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pressure Washing Edmonton | Residential &amp; Commercial Services | AquaDelta</title>
+<meta name="description" content="Mobile pressure washing in Edmonton, Alberta. Residential homes, and commercial building hot pressure washing system.">
+<link rel="icon" href="images/aquadelta-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#04193A;
+  --navy:#003070;
+  --blue:#4078B0;
+  --sky:#7FB2E0;
+  --ice:#EAF3F9;
+  --mist:#CFE2EF;
+  --white:#fff;
+  --notch:clamp(34px,5vw,64px);
+  --font:'Archivo','Arial Narrow','Helvetica Neue',Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font);font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4,p,ul{margin:0}
+ul{padding:0;list-style:none}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.wrap{width:min(1240px,100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:var(--navy);color:#fff;padding:.7rem 1rem;z-index:100}
+.skip:focus{left:0}
+
+/* buttons */
+.btn{display:inline-block;font:inherit;font-weight:700;font-stretch:90%;font-size:1.02rem;text-decoration:none;padding:.95rem 1.6rem;border-radius:6px;border:2px solid var(--navy);background:var(--navy);color:#fff;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn:hover{background:var(--blue);border-color:var(--blue)}
+.btn.ghost{background:transparent;color:var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.btn.light{background:#fff;color:var(--navy);border-color:#fff}
+.btn.light:hover{background:var(--mist);border-color:var(--mist)}
+
+/* header */
+.site-head{position:absolute;inset:0 0 auto 0;z-index:20;padding:1.1rem 0}
+.head-in{display:flex;align-items:center;gap:2rem}
+.logo img{width:196px;height:auto}
+.nav{margin-left:auto;display:flex;align-items:center;gap:2.1rem}
+.nav a{text-decoration:none;font-weight:600;font-stretch:92%;position:relative;padding:.3rem 0}
+.nav a.btn{padding:.7rem 1.25rem;font-size:.98rem}
+.nav a:not(.btn)::after{content:"";position:absolute;left:0;right:100%;bottom:-2px;height:3px;background:var(--blue);transition:right .25s}
+.nav a:not(.btn):hover::after,.nav a[aria-current]::after{right:0}
+.head-phone{font-weight:800;font-stretch:80%;font-size:1.25rem;text-decoration:none;color:var(--navy)}
+.menu-btn{display:none;margin-left:auto;background:var(--navy);color:#fff;border:0;border-radius:6px;padding:.65rem .9rem;font:inherit;font-weight:700;cursor:pointer}
+
+/* hero */
+.hero{position:relative;background:var(--ice);overflow:hidden;min-height:min(100vh,880px);display:flex;align-items:flex-end}
+.hero-copy{position:relative;z-index:3;padding:9.5rem 0 4.2rem;width:min(100%,640px)}
+.hero h1{font-weight:900;font-stretch:68%;font-size:clamp(3.5rem,9.2vw,8.6rem);line-height:.88;letter-spacing:-.01em;color:var(--navy)}
+.hero h1 span{display:block}
+.hero p.lede{margin-top:1.7rem;font-size:1.15rem;max-width:34rem}
+.hero-actions{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.9rem}
+.tri{position:absolute;right:-2vw;bottom:0;width:min(58vw,880px);aspect-ratio:1.08/1;z-index:1}
+.tri .photo{position:absolute;inset:0;background:url(images/water-splash.jpg) 58% 50%/cover;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.tri svg{position:absolute;inset:0 -13% 0 13%;width:100%;height:100%;overflow:visible;z-index:-1}
+.tri svg polygon{fill:none;stroke:var(--blue);stroke-width:2;vector-effect:non-scaling-stroke}
+.chip{white-space:nowrap;position:absolute;z-index:4;left:47%;bottom:11%;background:#fff;border-radius:999px;padding:.55rem 1.1rem .55rem .6rem;display:flex;align-items:center;gap:.7rem;font-weight:700;font-stretch:88%;box-shadow:0 10px 30px rgba(4,25,58,.28)}
+.chip img{width:38px;height:38px}
+@media (prefers-reduced-motion:no-preference){
+  .tri .photo{animation:rise 1.5s cubic-bezier(.2,.8,.2,1) both}
+  .hero h1 span{animation:line .9s cubic-bezier(.2,.8,.2,1) both}
+  .hero h1 span:nth-child(2){animation-delay:.12s}
+  .hero h1 span:nth-child(3){animation-delay:.24s}
+  @keyframes rise{from{clip-path:polygon(50% 100%,50% 100%,0 100%)}to{clip-path:polygon(50% 0,100% 100%,0 100%)}}
+  @keyframes line{from{opacity:0;transform:translateY(.4em)}to{opacity:1;transform:none}}
+}
+
+/* quote strip */
+.strip{background:var(--navy);color:#fff}
+.strip-in{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr}
+.strip-cell{padding:2rem 1.8rem;border-left:1px solid rgba(255,255,255,.18);display:flex;flex-direction:column;justify-content:center;gap:.25rem}
+.strip-cell:first-child{border-left:0;padding-left:0;gap:1rem;align-items:flex-start}
+.strip h3{font-size:1.55rem;font-stretch:78%;font-weight:800;line-height:1.1}
+.strip strong{font-size:1.5rem;font-weight:800;font-stretch:78%;line-height:1.1}
+.strip-cell.badge{flex-direction:row;align-items:center;gap:1rem}
+.strip-cell.badge img{width:72px;height:auto}
+
+/* intro */
+.intro{padding:clamp(4.5rem,9vw,8rem) 0 clamp(3rem,6vw,5rem)}
+.intro-lead{font-size:clamp(1rem,1.25vw,1.2rem);max-width:46rem;margin-bottom:2.2rem}
+.statement{font-size:clamp(2rem,4.7vw,4.2rem);font-weight:600;font-stretch:76%;line-height:1.22;letter-spacing:-.005em;color:var(--navy);max-width:20em}
+.statement img{display:inline-block;width:2.5em;height:1.02em;object-fit:cover;object-position:center 40%;border-radius:.5em;vertical-align:-.16em;margin:0 .12em}
+.intro-cols{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(2rem,6vw,6rem);margin-top:3.4rem;align-items:start}
+.intro-cols p+p{margin-top:1rem}
+.intro-cols a.inline{color:var(--navy);font-weight:700;text-underline-offset:3px}
+.review{background:var(--ice);padding:1.6rem;clip-path:polygon(0 0,calc(100% - 40px) 0,100% 40px,100% 100%,0 100%);display:flex;flex-direction:column;gap:1rem;align-items:flex-start}
+.review img{width:150px}
+.review p{font-weight:700;font-stretch:85%;font-size:1.15rem}
+.review a{display:inline-block;margin-top:.2rem}
+
+/* segments */
+.segments{background:var(--ice);padding:clamp(4rem,8vw,7rem) 0 clamp(5rem,9vw,8rem)}
+.seg-title{font-size:clamp(2rem,4.2vw,3.7rem);font-weight:800;font-stretch:70%;line-height:1;color:var(--navy);max-width:15em;margin-bottom:3.5rem}
+.seg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.2rem,3vw,3rem);align-items:start}
+.seg:nth-child(2){margin-top:3.5rem}
+.seg:nth-child(3){margin-top:7rem}
+.seg figure{margin:0 0 1.3rem;clip-path:polygon(0 0,calc(100% - var(--notch)) 0,100% var(--notch),100% 100%,0 100%);background:var(--mist)}
+.seg img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.seg h3{font-size:2.3rem;font-weight:800;font-stretch:72%;color:var(--navy);line-height:1;margin-bottom:.7rem}
+.seg p{max-width:26rem}
+
+/* services */
+.services{padding:clamp(4.5rem,9vw,8rem) 0;background:#fff}
+.svc-head-row{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:3rem}
+.svc-head-row h2{font-size:clamp(2.2rem,5vw,4.6rem);font-weight:900;font-stretch:68%;line-height:.95;color:var(--navy);max-width:11em}
+.svc-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,5rem);align-items:start}
+.svc-list{border-top:2px solid var(--navy)}
+.svc{border-bottom:1px solid var(--mist)}
+.svc button{all:unset;box-sizing:border-box;cursor:pointer;display:flex;justify-content:space-between;align-items:center;width:100%;padding:1rem 0;font-size:clamp(1.5rem,2.7vw,2.4rem);font-weight:700;font-stretch:74%;color:var(--ink);transition:color .2s,padding .25s}
+.svc button:hover{color:var(--blue)}
+.svc button:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+.svc button::after{content:"";width:.7em;height:.62em;background:var(--mist);clip-path:polygon(50% 0,100% 100%,0 100%);transition:background .2s,transform .25s;flex:none;margin-left:1rem}
+.svc.open button{color:var(--navy);font-weight:900}
+.svc.open button::after{background:var(--blue);transform:rotate(180deg)}
+.svc-body{display:none;padding:0 0 1.6rem;max-width:34rem}
+.svc.open .svc-body{display:block}
+.svc-body p{margin-bottom:1rem}
+.svc-body a{font-weight:700;color:var(--navy);text-underline-offset:3px}
+.svc-body .m-img{display:none;margin-bottom:1rem;width:100%;aspect-ratio:4/3;object-fit:cover;clip-path:polygon(0 0,calc(100% - 34px) 0,100% 34px,100% 100%,0 100%)}
+.svc-preview{position:sticky;top:2rem;margin:0}
+.svc-preview .frame{clip-path:polygon(0 0,calc(100% - var(--notch)) 0,100% var(--notch),100% 100%,0 100%);background:var(--ice);aspect-ratio:4/3;overflow:hidden;position:relative}
+.svc-preview img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.svc-preview figcaption{margin-top:1rem;font-weight:700;font-stretch:85%;font-size:1.1rem;color:var(--navy)}
+
+/* free offer */
+.offer{position:relative;color:#fff;background:linear-gradient(rgba(4,25,58,.72),rgba(4,25,58,.84)),url(images/water-splash.jpg) center/cover;padding:clamp(5rem,10vw,9rem) 0;overflow:hidden}
+.offer .tri-out{position:absolute;right:-6%;top:-20%;width:56%;height:150%;opacity:.55;pointer-events:none}
+.offer .tri-out polygon{fill:none;stroke:var(--sky);stroke-width:2;vector-effect:non-scaling-stroke}
+.offer-in{position:relative;max-width:56rem}
+.offer h2{font-size:clamp(2.3rem,5.3vw,4.8rem);font-weight:800;font-stretch:70%;line-height:1;margin-bottom:1.6rem}
+.offer p{font-size:1.25rem;margin-bottom:2rem}
+
+/* testimonials */
+.voices{padding:clamp(4.5rem,9vw,8rem) 0;background:var(--ice)}
+.voices h2{font-size:clamp(2rem,4vw,3.4rem);font-weight:800;font-stretch:70%;color:var(--navy);margin-bottom:3rem}
+.voice-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(1.5rem,4vw,4rem);align-items:start}
+.voice{background:#fff;padding:clamp(1.6rem,3vw,2.8rem);clip-path:polygon(0 0,calc(100% - 44px) 0,100% 44px,100% 100%,0 100%)}
+.voice:nth-child(2){margin-top:4rem;background:var(--navy);color:#fff}
+.voice blockquote{margin:0 0 1.6rem;font-size:clamp(1.25rem,2vw,1.75rem);font-weight:500;font-stretch:88%;line-height:1.35}
+.voice:nth-child(2) blockquote{font-size:1.2rem}
+.voice figcaption{display:flex;align-items:center;gap:.9rem;font-weight:800;font-stretch:80%;font-size:1.2rem}
+.voice img{width:48px;height:48px;border-radius:50%}
+.voice{margin-inline:0}
+
+/* footer */
+.foot{background:var(--ink);color:#d6e6f3;padding:clamp(4rem,7vw,6rem) 0 0}
+.foot-grid{display:grid;grid-template-columns:1.4fr .7fr 1.1fr 1fr;gap:clamp(1.5rem,4vw,3.5rem)}
+.foot img.fl{width:210px;margin-bottom:1.2rem}
+.foot h4{font-size:1.35rem;font-weight:800;font-stretch:78%;color:#fff;margin-bottom:1rem}
+.foot li+li{margin-top:.45rem}
+.foot a{text-decoration:none}
+.foot a:hover{text-decoration:underline;text-underline-offset:3px}
+.foot .fb{display:inline-block;margin-top:1rem;font-weight:700;color:#fff;border:2px solid rgba(255,255,255,.35);padding:.45rem 1rem;border-radius:6px}
+.foot .insured{width:96px;margin-top:1.2rem}
+.foot-note{margin-top:.8rem;font-size:.95rem}
+.foot-bar{margin-top:clamp(3rem,6vw,5rem);border-top:1px solid rgba(255,255,255,.16);padding:1.4rem 0;display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;font-size:.95rem}
+.foot-bar ul{display:flex;flex-wrap:wrap;gap:1.4rem}
+.foot-bar a.credit{color:#fff;font-weight:700}
+
+/* responsive */
+@media (max-width:1020px){
+  .nav,.head-phone{display:none}
+  .menu-btn{display:block}
+  .nav.open{display:flex;position:absolute;left:1.25rem;right:1.25rem;top:100%;background:#fff;flex-direction:column;align-items:flex-start;padding:1.4rem;gap:1rem;box-shadow:0 20px 40px rgba(4,25,58,.25);border-radius:8px}
+  .nav.open .head-phone{display:block}
+  .strip-in{grid-template-columns:1fr 1fr}
+  .strip-cell:nth-child(3){border-left:0;padding-left:0}
+  .strip-cell:first-child{grid-column:1/-1;border-bottom:1px solid rgba(255,255,255,.18)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  .hero{align-items:flex-start;flex-direction:column;min-height:0}
+  .hero-copy{padding:8rem 0 2rem}
+  .tri{position:relative;right:auto;width:118%;margin-left:-9%;margin-top:0}
+  .chip{left:50%;transform:translateX(-50%);bottom:8%}
+  .intro-cols,.svc-layout,.voice-grid{grid-template-columns:1fr}
+  .seg-grid{grid-template-columns:1fr}
+  .seg:nth-child(2),.seg:nth-child(3),.voice:nth-child(2){margin-top:0}
+  .svc-preview{display:none}
+  .svc-body .m-img{display:block}
+  .svc-body{max-width:none}
+}
+@media (max-width:560px){
+  .strip-in{grid-template-columns:1fr}
+  .strip-cell,.strip-cell:nth-child(3){border-left:0;padding-left:0;border-top:1px solid rgba(255,255,255,.18)}
+  .strip-cell:first-child{border-top:0}
+  .foot-grid{grid-template-columns:1fr}
+  .logo img{width:160px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="logo" href="https://www.aquadeltaltd.ca/" aria-label="AquaDelta home"><img src="images/aquadelta-logo.png" alt="AquaDelta" width="279" height="94"></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="https://www.aquadeltaltd.ca/" aria-current="page">Home</a>
+      <a href="https://www.aquadeltaltd.ca/our-services/">Services</a>
+      <a href="https://www.aquadeltaltd.ca/gallery/">Gallery</a>
+      <a href="https://www.aquadeltaltd.ca/contact-us/">Contact Us</a>
+      <a class="head-phone" href="tel:7809106336">(780) 910-6336</a>
+      <a class="btn" href="https://www.aquadeltaltd.ca/contact-us/">Get a quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="content">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1><span>Edmonton’s</span><span>Best Power</span><span>Washers</span></h1>
+      <p class="lede">A mobile power washing system in Edmonton for commercial, industrial &amp; residential. Concrete cleaning, wall and brick cleaning, decks, siding, window cleaning, graffiti removal, and more.</p>
+      <div class="hero-actions">
+        <a class="btn" href="https://www.aquadeltaltd.ca/contact-us/">Get a quote</a>
+        <a class="btn ghost" href="https://www.aquadeltaltd.ca/our-services/">Our services</a>
+      </div>
+    </div>
+  </div>
+  <div class="tri" aria-hidden="true">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none"><polygon points="50,0 100,100 0,100"/></svg>
+    <div class="photo"></div>
+  </div>
+  <div class="chip"><img src="images/aquadelta-mark.png" alt=""><span>Hot pressure washing</span></div>
+</section>
+
+<section class="strip" aria-label="Get a quote">
+  <div class="wrap strip-in">
+    <div class="strip-cell">
+      <h3>Are you looking for pressure washing services?</h3>
+      <a class="btn light" href="https://www.aquadeltaltd.ca/contact-us/">Get a quote</a>
+    </div>
+    <div class="strip-cell badge"><img src="images/licensed-bonded-insured.png" alt="Licensed, bonded and insured"><strong>Licensed, bonded &amp; insured</strong></div>
+    <div class="strip-cell"><strong>Calls answered 24/7</strong><a href="tel:7809106336">(780) 910-6336</a></div>
+    <div class="strip-cell"><strong>Free estimates</strong><span>Commercial, industrial and residential</span></div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <p class="intro-lead">Welcome to Aquadelta Power Washing systems, servicing Edmonton and the surrounding areas with an exceptional commercial and residential pressure washing service. Established with the passion and a long experience in power washing, focusing on cleaning properties’ exteriors with hot pressure washing.</p>
+    <h2 class="statement">With our pressure washing system, we clean all types of structures including <img src="images/concrete-patio-washing.jpg" alt="">concrete, <img src="images/decks-fences-washing.jpg" alt="">wood, <img src="images/store-front-washing.jpg" alt="">bricks, and <img src="images/equipment-washing.jpg" alt="">metals.</h2>
+    <div class="intro-cols">
+      <div>
+        <p>Pressure washing services for driveways and garage floors, walkways, walls, concrete patios and decks, wooden decks and fences, heavy equipment, brick, siding, swimming pools, and a lot more.</p>
+        <p>Aquadelta pressure washing can clean oil stains on concrete floors, including <a class="inline" href="https://www.aquadeltaltd.ca/our-services/dumpster-enclosures-washing">dumpster pads and enclosures</a>.</p>
+        <p>Please contact Aquadelta for all pressure washing services needed in Edmonton, and surroundings.</p>
+      </div>
+      <aside class="review">
+        <img src="images/google-review.png" alt="Google">
+        <p>Leave us a review</p>
+        <a class="btn ghost" href="https://g.page/r/CeLkZaBzbO9wEAI/review">Review on Google</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="segments">
+  <div class="wrap">
+    <h2 class="seg-title">Hot Pressure Washing for Residential, Industrial, and Commercial Properties</h2>
+    <div class="seg-grid">
+      <article class="seg">
+        <figure><img src="images/residential.jpg" alt="Residential pressure washing of a house exterior"></figure>
+        <h3>Residential</h3>
+        <p>Residential pressure washing for house exteriors, such as windows cleaning, siding, walkways and driveways, garage floors, brick walls and masonry, patios and decks. Contact Aquadelta Pressure Washing team to have your house exterior as clean as new.</p>
+      </article>
+      <article class="seg">
+        <figure><img src="images/commercial-walkways.jpg" alt="Commercial walkway pressure washing"></figure>
+        <h3>Commercial</h3>
+        <p>Commercial pressure washing is a big part of our power washing services, that include parking lots cleaning, warehouse, gas stations, commercial and office buildings, and underground parking. Please contact our team at Aquadelta Pressure Washing to get started on cleaning your commercial property.</p>
+      </article>
+      <article class="seg">
+        <figure><img src="images/industrial-floor.jpg" alt="Industrial floor hot pressure washing"></figure>
+        <h3>Industrial</h3>
+        <p>Industrial pressure washing is available for trucks, heavy equipment, oil fields large equipment, and industrial properties oil stain removal and hot water pressure cleaning. Contact Aquadelta Pressure Washing for any structures that needs power and hot water pressure washing to get started.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="svc-head-row">
+      <h2>Our Complete Pressure Washing Services</h2>
+      <a class="btn ghost" href="https://www.aquadeltaltd.ca/our-services/">All services</a>
+    </div>
+    <div class="svc-layout">
+      <ul class="svc-list" id="svcList">
+        <li class="svc open" data-img="images/gas-station-washing.jpg" data-name="Gas Station Washing">
+          <button aria-expanded="true">Gas Station Washing</button>
+          <div class="svc-body"><img class="m-img" src="images/gas-station-washing.jpg" alt="Gas station washing"><p>Whether you own or manage a gas station, the canopy, walkways, walls and parking lot need attention, and require seasonal clean up. Aquadelta can wash and clean your gas station at a scheduled arrangements.</p><a href="https://www.aquadeltaltd.ca/our-services/gas-station-washing/">Service detail</a></div>
+        </li>
+        <li class="svc" data-img="images/decks-fences-washing.jpg" data-name="Decks &amp; Fences Washing">
+          <button aria-expanded="false">Decks &amp; Fences Washing</button>
+          <div class="svc-body"><img class="m-img" src="images/decks-fences-washing.jpg" alt="Wooden deck pressure washing"><p>Our decks pressure washing exceed your expectation, we can turn your deck to a brand new look, as you will think you just got a new deck. Pressure washing for all types of decks and fences material that includes vinyl.</p><a href="https://www.aquadeltaltd.ca/our-services/wooden-deck-and-fence-washing/">Service detail</a></div>
+        </li>
+        <li class="svc" data-img="images/equipment-washing.jpg" data-name="Equipment Washing">
+          <button aria-expanded="false">Equipment Washing</button>
+          <div class="svc-body"><img class="m-img" src="images/equipment-washing.jpg" alt="Heavy equipment pressure washing"><p>Our mobile power washing system is capable of cleaning your heavy equipment and trucks at your location. Give Aquadelta a call to arrange.</p><a href="https://www.aquadeltaltd.ca/our-services/heavy-equipment-pressure-washing/">Service detail</a></div>
+        </li>
+        <li class="svc" data-img="images/concrete-patio-washing.jpg" data-name="Concrete Patio Washing">
+          <button aria-expanded="false">Concrete Patio Washing</button>
+          <div class="svc-body"><img class="m-img" src="images/concrete-patio-washing.jpg" alt="Concrete patio washing"><p>Aquadelta provides expert services in pressure washing for concrete surfaces, concrete patios, and concrete walkways. We use hot pressure washing to remove stains and convert your concrete patio to a clean surface.</p><a href="https://www.aquadeltaltd.ca/our-services/concrete-patio-washing/">Service detail</a></div>
+        </li>
+        <li class="svc" data-img="images/garage-floor-driveways.jpg" data-name="Garage Floor &amp; Driveways">
+          <button aria-expanded="false">Garage Floor &amp; Driveways</button>
+          <div class="svc-body"><img class="m-img" src="images/garage-floor-driveways.jpg" alt="Garage floor and driveway washing"><p>Garage floors and driveways pressure washing is one of our main services. With many years of experience in pressure washing, you can depend on Aquadelta for cleaning your garage floor and driveways from any oil stains and other stains.</p><a href="https://www.aquadeltaltd.ca/our-services/garage-floor-and-driveways/">Service detail</a></div>
+        </li>
+        <li class="svc" data-img="images/restaurant-drive-thru-washing.jpg" data-name="Restaurant &amp; Drive Thru Washing">
+          <button aria-expanded="false">Restaurant &amp; Drive Thru Washing</button>
+          <div class="svc-body"><img class="m-img" src="images/restaurant-drive-thru-washing.jpg" alt="Restaurant and drive thru washing"><p>Whether you own and you manage a restaurant, your restaurant entrance and your drive thru lot needs maintenance and cleaning an average of 4 times a year. Aquadelta can clean it all at a scheduled arrangements.</p><a href="https://www.aquadeltaltd.ca/our-services/restaurant-drive-thru-washing/">Service detail</a></div>
+        </li>
+        <li class="svc" data-img="images/store-front-washing.jpg" data-name="Store Front Washing">
+          <button aria-expanded="false">Store Front Washing</button>
+          <div class="svc-body"><img class="m-img" src="images/store-front-washing.jpg" alt="Store front washing"><p>Store front is very important to keep it clean for your customers. At Aquadelta Power Washing, we can clean and wash any walls, bricks, doors and windows of your store front.</p><a href="https://www.aquadeltaltd.ca/our-services/store-front-washing/">Service detail</a></div>
+        </li>
+        <li class="svc" data-img="images/awning-washing.jpg" data-name="Awning Washing">
+          <button aria-expanded="false">Awning Washing</button>
+          <div class="svc-body"><img class="m-img" src="images/awning-washing.jpg" alt="Awning washing"><p>Our mobile power washing system is capable of cleaning residential or commercial awning. Give Aquadelta a call at (780) 910-6336 to arrange.</p><a href="https://www.aquadeltaltd.ca/our-services/awning-washing/">Service detail</a></div>
+        </li>
+        <li class="svc" data-img="images/house-exterior-washing.jpg" data-name="House Exterior Washing">
+          <button aria-expanded="false">House Exterior Washing</button>
+          <div class="svc-body"><img class="m-img" src="images/house-exterior-washing.jpg" alt="House exterior siding washing"><p>With many years of experience in house exterior washing, you can depend on Aquadelta for all siding and windows pressure washing.</p><a href="https://www.aquadeltaltd.ca/our-services/house-exterior-washing/">Service detail</a></div>
+        </li>
+        <li class="svc" data-img="images/dumpster-enclosures-washing.jpg" data-name="Dumpster Enclosures Washing">
+          <button aria-expanded="false">Dumpster Enclosures Washing</button>
+          <div class="svc-body"><img class="m-img" src="images/dumpster-enclosures-washing.jpg" alt="Dumpster enclosures washing"><p>Cleaning a dumpster enclosures with power washing is an essential task for maintaining a clean and sanitary environment around the waste disposal area.</p><a href="https://www.aquadeltaltd.ca/our-services/dumpster-enclosures-washing/">Service detail</a></div>
+        </li>
+      </ul>
+      <figure class="svc-preview" aria-live="polite">
+        <div class="frame"><img id="svcImg" src="images/gas-station-washing.jpg" alt=""></div>
+        <figcaption id="svcCap">Gas Station Washing</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="offer">
+  <svg class="tri-out" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polygon points="50,0 100,100 0,100"/></svg>
+  <div class="wrap">
+    <div class="offer-in">
+      <h2>Aquadelta is willing to clean part of your property with hot water pressure washing anywhere in Edmonton at no charge</h2>
+      <p>Contact us to find out how this works.</p>
+      <a class="btn light" href="https://www.aquadeltaltd.ca/contact-us/">Contact us</a>
+    </div>
+  </div>
+</section>
+
+<section class="voices">
+  <div class="wrap">
+    <h2>Testimonials</h2>
+    <div class="voice-grid">
+      <figure class="voice" style="margin-block:0">
+        <blockquote>I got Aquadelta to clean my house exterior with their hot pressure washing. The guy showed up on time and I had my siding and windows perfectly cleaned in 1 hour. I would hire the Aquadelta Power Washer again next year.</blockquote>
+        <figcaption><img src="images/aquadelta-mark.png" alt="">Elie K.</figcaption>
+      </figure>
+      <figure class="voice">
+        <blockquote>Aquadelta’s been cleaning our parking lot for many months now, and we are very happy with the results. They were able to remove the oil spots from the lot while others in the past couldn’t. Good guys and they know what and how they do it right.</blockquote>
+        <figcaption><img src="images/aquadelta-mark.png" alt="">Tom Brentwood</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img class="fl" src="images/aquadelta-logo-light.png" alt="AquaDelta" width="279" height="94">
+        <p>We strive to power wash your property. Contact us to get FREE estimates on any commercial, industrial, and residential properties.</p>
+        <a class="fb" href="https://www.facebook.com/aquadeltaltd">Follow us on Facebook</a>
+        <img class="insured" src="images/licensed-bonded-insured.png" alt="Licensed, bonded and insured">
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://www.aquadeltaltd.ca/">Home</a></li>
+          <li><a href="https://www.aquadeltaltd.ca/our-services/">Services</a></li>
+          <li><a href="https://www.aquadeltaltd.ca/gallery/">Gallery</a></li>
+          <li><a href="https://www.aquadeltaltd.ca/contact-us/">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact info</h4>
+        <p>Aquadelta LTD.<br>Office: 7835 127 ave. T5C 1R9<br>Mailing Address: 842-11808 104 Ave Edmonton, Alberta, Canada. T5J-2L8</p>
+        <p style="margin-top:.8rem"><a href="tel:7809106336">(780) 910-6336</a><br><a href="mailto:aquadelta@live.ca">aquadelta@live.ca</a></p>
+      </div>
+      <div>
+        <h4>Business hours</h4>
+        <p>We are available to answer your calls 24/7. Operating hrs:</p>
+        <ul class="foot-note">
+          <li>Monday-Friday: 9:00 am to 5:00 pm</li>
+          <li>Saturday: 10:00 am to 2:00 pm</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <p>Copyright © 2026 AquaDelta. <a class="credit" href="https://cleaningdigital.ca/">Design by Cleaning Digital.</a></p>
+      <ul>
+        <li><a href="https://www.aquadeltaltd.ca/our-services/">Our Services</a></li>
+        <li><a href="https://www.aquadeltaltd.ca/contact-us/">Contact Us</a></li>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var list=document.getElementById('svcList'),img=document.getElementById('svcImg'),cap=document.getElementById('svcCap');
+  function openItem(li){
+    list.querySelectorAll('.svc').forEach(function(x){
+      var on=x===li;x.classList.toggle('open',on);
+      x.querySelector('button').setAttribute('aria-expanded',on);
+    });
+    img.src=li.dataset.img;cap.innerHTML=li.dataset.name;
+  }
+  list.querySelectorAll('.svc').forEach(function(li){
+    var b=li.querySelector('button');
+    b.addEventListener('click',function(){openItem(li)});
+    b.addEventListener('mouseenter',function(){if(window.matchMedia('(min-width:861px)').matches)openItem(li)});
+  });
+  var mb=document.querySelector('.menu-btn'),nav=document.getElementById('nav');
+  mb.addEventListener('click',function(){var o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+})();
+</script>
+</body>
+</html>
